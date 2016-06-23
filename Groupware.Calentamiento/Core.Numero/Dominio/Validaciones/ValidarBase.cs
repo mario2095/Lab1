@@ -10,8 +10,27 @@ namespace Core.Numero.Dominio.Validaciones
     {
         public bool LaBaseEstaEnElIntervaloCorrecto (int laBase)
         {
-            bool resultado;
-            resultado = (2 <= laBase) & (laBase <= 16);
+            bool resultado=false;
+            string especiales = "0204081632";
+
+            if ((2 <= laBase) & (laBase <= 32))
+            {
+                for (int i = 0; i <= 10; i = i + 2)
+                {
+                    string cespecial = especiales.Substring(i, 2);
+
+                    if (laBase == Int32.Parse(cespecial))
+                    {
+                        resultado = true;
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                resultado = false;
+            }            
+
             return (resultado);
         }
 

@@ -13,16 +13,37 @@ namespace Core.Numero.Dominio.Validaciones
             bool elResultado = true;
             for (int i = 0; (elResultado == true) & (i < elNumero.Length); i++)
             {
-                elResultado = ElDigitoEsValidoEnLaBase(elNumero[i], laBase);
+                elResultado = ElDigitoEsValidoEnLaBase(elNumero, laBase);
             }
             return (elResultado);
         }
 
-        private bool ElDigitoEsValidoEnLaBase (char elDigito, int laBase)
+        public bool ElDigitoEsValidoEnLaBase (string elDigito, int laBase)
         {
-            bool elResultado;
-            // TODO:  Verificarlo!!!
-            elResultado = true;
+            bool elResultado=false;
+
+            
+            switch (laBase)
+            {
+                case 2:
+                    
+                    break;
+                case 4:
+                    
+                    break;
+                case 8:
+                    
+                    break;
+                case 16:
+                    
+                case 32:
+                    //elResultado =ValidaBase32.Equals.
+                    break;
+                default:
+                    elResultado = false;
+                    break;
+            }
+            
             return (elResultado);
 
         }

@@ -15,8 +15,6 @@ namespace Core.Numero.Dominio.Acciones
             if (validarBases.LasDosBasesSonIguales (elPrimerNumero, elSegundoNumero))
             { 
                 double elResultadoNumerico = (elPrimerNumero.elNumeroEnDecimal + elSegundoNumero.elNumeroEnDecimal);
-                //TODO:  Convertir el resultado en base 10 del punto anterior a la base de los números
-                // por ejemplo, originalmente, podría estar sumando "2A" + "3F" en base hexadecimal
                 resultado= new Numero(elResultadoNumerico.ToString(), elPrimerNumero.laBase);
             }
             return (resultado);
