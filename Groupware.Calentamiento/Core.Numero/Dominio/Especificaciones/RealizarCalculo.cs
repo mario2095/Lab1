@@ -16,6 +16,18 @@ namespace Core.Numero.Dominio.Especificaciones
                 case '+':   var accionSuma = new Acciones.Suma();
                     elResultado = accionSuma.Operar(elPrimerNumero, elSegundoNumero);
                     break;
+                case '-':
+                    var accionResta = new Acciones.Resta(); 
+                    elResultado = accionResta.Operar(elPrimerNumero, elSegundoNumero);
+                    break;
+                case '/':
+                    var accionDiv = new Acciones.Division();
+                    elResultado = accionDiv.Operar(elPrimerNumero, elSegundoNumero);
+                    break;
+                case '*':
+                    var accionMult = new Acciones.Multiplicacion();
+                    elResultado = accionMult.Operar(elPrimerNumero, elSegundoNumero);
+                    break;
             }
             return (elResultado);
         }
