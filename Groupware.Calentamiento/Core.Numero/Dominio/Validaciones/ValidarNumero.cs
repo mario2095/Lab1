@@ -37,7 +37,7 @@ namespace Core.Numero.Dominio.Validaciones
                 case 16:
                     
                 case 32:
-                    //elResultado =ValidaBase32.Equals.
+                    elResultado =ValidaBase32.ElNumeroEsBase32(elDigito);
                     break;
                 default:
                     elResultado = false;

@@ -40,7 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dominio\Acciones\Class1.cs" />
+    <Compile Include="Dominio\Acciones\deDecimalaBase32.cs" />
+    <Compile Include="Dominio\Acciones\deBase32aDecimal.cs" />
     <Compile Include="Dominio\Acciones\Multiplicacion.cs" />
     <Compile Include="Dominio\Acciones\Division.cs" />
     <Compile Include="Dominio\Acciones\Resta.cs" />

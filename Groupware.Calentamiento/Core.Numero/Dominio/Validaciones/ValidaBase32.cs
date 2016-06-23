@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Core.Numero.Dominio.Validaciones
 {
     public class ValidaBase32
     {
-        public bool ElNumeroEsBase32(string elNumero)
+        static public bool ElNumeroEsBase32(string elNumero)
         {
             string especiales = "wxyzWXYZ";
             bool elResultado = true;
